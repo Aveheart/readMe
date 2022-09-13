@@ -40,20 +40,21 @@ inquirer
     },
 
  ])
+}
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const fileName = 'readMe.md';
-    const data = generateMarkdown(data);
-
     fs.writeFile(fileName, data, err => {
         if (err) throw new Error(err);
     })
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    questions()
+    .then(writeToFile);
+}
 
 // Function call to initialize app
-init();
+init()
