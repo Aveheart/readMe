@@ -21,7 +21,7 @@ return inquirer
     {
         type: 'input',
         message: 'How would one install your project?',
-        name: 'Installation',
+        name: 'install',
     },
     {
         type: 'input',
@@ -34,10 +34,25 @@ return inquirer
         name: 'credit',
     },
     {
+        type: 'input',
+        message: 'Enter your test instructions',
+        name:'test'
+    },
+    {
         type: 'list',
         massage: 'Which license will you use?',
         choices: ["MIT", "Mozilla", "GNU General Public", "None"],
         name: 'license',
+    },
+    {
+        type: 'input',
+        message: 'enter github username',
+        name: 'github',
+    },
+    {
+        type: 'input',
+        message: 'enter email',
+        name: 'email',
     },
 
  ])
