@@ -41,7 +41,7 @@ return inquirer
     {
         type: 'list',
         massage: 'Which license will you use?',
-        choices: ["MIT", "Mozilla", "GNU General Public", "None"],
+        choices: ["MIT", "Mozilla", "GNU General Public"],
         name: 'license',
     },
     {
